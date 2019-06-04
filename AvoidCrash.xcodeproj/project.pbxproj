@@ -13,6 +13,12 @@
 		18AD373922A616110019C2B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AD373822A616110019C2B6 /* Assets.xcassets */; };
 		18AD373C22A616110019C2B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AD373A22A616110019C2B6 /* LaunchScreen.storyboard */; };
 		18AD373F22A616110019C2B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AD373E22A616110019C2B6 /* main.m */; };
+		18AD375122A618520019C2B6 /* NSObject+SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AD375022A618520019C2B6 /* NSObject+SwizzleMethod.m */; };
+		18AD375422A6372A0019C2B6 /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AD375322A6372A0019C2B6 /* NSMutableArray+Safe.m */; };
+		18AD375722A638E00019C2B6 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AD375622A638E00019C2B6 /* NSArray+Safe.m */; };
+		18AD375A22A63A440019C2B6 /* NSMutableDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AD375922A63A440019C2B6 /* NSMutableDictionary+Safe.m */; };
+		18AD375D22A63CC00019C2B6 /* NSTimer+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AD375C22A63CC00019C2B6 /* NSTimer+Safe.m */; };
+		18AD376222A676120019C2B6 /* ACProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AD376122A676120019C2B6 /* ACProxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,18 @@
 		18AD373B22A616110019C2B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18AD373D22A616110019C2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18AD373E22A616110019C2B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18AD374F22A618520019C2B6 /* NSObject+SwizzleMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwizzleMethod.h"; sourceTree = "<group>"; };
+		18AD375022A618520019C2B6 /* NSObject+SwizzleMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwizzleMethod.m"; sourceTree = "<group>"; };
+		18AD375222A6372A0019C2B6 /* NSMutableArray+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safe.h"; sourceTree = "<group>"; };
+		18AD375322A6372A0019C2B6 /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
+		18AD375522A638E00019C2B6 /* NSArray+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		18AD375622A638E00019C2B6 /* NSArray+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		18AD375822A63A440019C2B6 /* NSMutableDictionary+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Safe.h"; sourceTree = "<group>"; };
+		18AD375922A63A440019C2B6 /* NSMutableDictionary+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Safe.m"; sourceTree = "<group>"; };
+		18AD375B22A63CC00019C2B6 /* NSTimer+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Safe.h"; sourceTree = "<group>"; };
+		18AD375C22A63CC00019C2B6 /* NSTimer+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Safe.m"; sourceTree = "<group>"; };
+		18AD376022A676120019C2B6 /* ACProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACProxy.h; sourceTree = "<group>"; };
+		18AD376122A676120019C2B6 /* ACProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACProxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +60,8 @@
 		18AD372322A616100019C2B6 = {
 			isa = PBXGroup;
 			children = (
+				18AD375F22A676020019C2B6 /* SubClass */,
+				18AD374B22A617BD0019C2B6 /* Category */,
 				18AD372E22A616100019C2B6 /* AvoidCrash */,
 				18AD372D22A616100019C2B6 /* Products */,
 			);
@@ -69,6 +89,32 @@
 				18AD373E22A616110019C2B6 /* main.m */,
 			);
 			path = AvoidCrash;
+			sourceTree = "<group>";
+		};
+		18AD374B22A617BD0019C2B6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				18AD374F22A618520019C2B6 /* NSObject+SwizzleMethod.h */,
+				18AD375022A618520019C2B6 /* NSObject+SwizzleMethod.m */,
+				18AD375222A6372A0019C2B6 /* NSMutableArray+Safe.h */,
+				18AD375322A6372A0019C2B6 /* NSMutableArray+Safe.m */,
+				18AD375522A638E00019C2B6 /* NSArray+Safe.h */,
+				18AD375622A638E00019C2B6 /* NSArray+Safe.m */,
+				18AD375822A63A440019C2B6 /* NSMutableDictionary+Safe.h */,
+				18AD375922A63A440019C2B6 /* NSMutableDictionary+Safe.m */,
+				18AD375B22A63CC00019C2B6 /* NSTimer+Safe.h */,
+				18AD375C22A63CC00019C2B6 /* NSTimer+Safe.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		18AD375F22A676020019C2B6 /* SubClass */ = {
+			isa = PBXGroup;
+			children = (
+				18AD376022A676120019C2B6 /* ACProxy.h */,
+				18AD376122A676120019C2B6 /* ACProxy.m */,
+			);
+			path = SubClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +188,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				18AD373422A616100019C2B6 /* ViewController.m in Sources */,
+				18AD375122A618520019C2B6 /* NSObject+SwizzleMethod.m in Sources */,
+				18AD375422A6372A0019C2B6 /* NSMutableArray+Safe.m in Sources */,
+				18AD375A22A63A440019C2B6 /* NSMutableDictionary+Safe.m in Sources */,
 				18AD373F22A616110019C2B6 /* main.m in Sources */,
+				18AD375D22A63CC00019C2B6 /* NSTimer+Safe.m in Sources */,
 				18AD373122A616100019C2B6 /* AppDelegate.m in Sources */,
+				18AD376222A676120019C2B6 /* ACProxy.m in Sources */,
+				18AD375722A638E00019C2B6 /* NSArray+Safe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

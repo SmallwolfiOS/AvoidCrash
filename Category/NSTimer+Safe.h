@@ -1,5 +1,5 @@
 //
-//  NSMutableDictionary+Safe.h
+//  NSTimer+Safe.h
 //  AvoidCrash
 //
 //  Created by Apple on 2019/6/4.
@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSMutableDictionary (Safe)
+@interface NSTimer (Safe)
+-
+
 
 @end
 
